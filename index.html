@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Pricing Table</title>
+
+<style>
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f4f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 2rem;
+         
+    }
+    .cardDetails{
+        flex: 1;
+        max-width: 400px;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+        transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    }
+
+    .cardDetails.middle {
+        background-color: #f5f5ff;
+        border: 3px solid #b9eaef;
+        transform: scale(1.05); 
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .title{
+        font-size: 24px;
+        font-weight: bold;
+         margin-bottom: 10px;
+         
+    }
+    .price{
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #ff6600;
+    }
+
+    .features{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    .features li{
+        margin-bottom: 20px;
+        color: #191818; 
+    }
+
+    .buybutton{
+        padding: 10px;
+        background-color: #3907ef;
+        color: #fff;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+
+
+    }
+
+    .buybutton:hover {
+        background-color: #1cacdc;
+    }
+
+
+    .best-seller {
+        background: linear-gradient(135deg, #eeff00, #d0ff00);
+        color: #2e3169;
+        border-radius: 25px;
+        padding: 5px 10px;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 14px;
+        font-weight: bold;
+
+    }
+
+    @media (max-width: 1250px) {
+        .card{
+            flex-direction: column;
+            height: 100%;
+            
+            
+        }
+        
+    }
+
+
+</style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="cardDetails">
+            <h3 class="title">BASIC</h3>
+            <h1 class="price">₹99</h1>
+            <h5>1 WEBSITE / MONTH</h5>
+            <ul class="features">
+                <li>✅ Up to 8 users</li>
+                <li>✅ 15 GB storage</li>
+                <li>✅ 55+ Field Types</li>
+                <li>✅ Professional Support</li>
+            </ul>
+            <button class="buybutton">Buy now</button>
+        </div>
+        
+    
+        <div class="cardDetails middle" style="position: relative;">
+            <span class="best-seller">BEST SELLER</span>
+            <h3 class="title">PRO</h3>
+            <h1 class="price">₹569</h1>
+            <h5>50 WEBSITES / MONTH</h5>
+            <ul class="features">
+                <li>✅ Up to 50 users</li>
+                <li>✅ 100 GB storage</li>
+                <li>✅ 55+ Field Types</li>
+                <li>✅ Professional Support</li>
+            </ul>
+            <button class="buybutton">Buy now</button>
+        </div>
+        
+        
+        <div class="cardDetails">
+            <h3 class="title">ENTERPRISE</h3>
+            <h1 class="price">₹1999</h1>
+            <h5>50 WEBSITES / YEAR</h5>
+            <ul class="features">
+                <li>✅ Unlimited users</li>
+                <li>✅ 2 TB storage</li>
+                <li>✅ 55+ Field Types</li>
+                <li>✅ Professional Support</li>
+            </ul>
+            <button class="buybutton">Buy now</button>
+        </div>
+    </div>
+
+</body>
+</html>
